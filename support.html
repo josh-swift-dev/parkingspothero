@@ -3,451 +3,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f4f8ff">
-  <meta name="description" content="Parking Spot Hero support, frequently asked questions, and troubleshooting.">
-  <title>Parking Spot Hero | Support</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - Parking Spot Hero</title>
   <style>
-    :root {
-      color-scheme: light;
-      --blue: #2563eb;
-      --navy: #142747;
-      --text: #334155;
-      --muted: #64748b;
-      --background: #f4f8ff;
-      --border: #e2e8f0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    :root { color-scheme: light dark; }
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, sans-serif;
-      background: var(--background);
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
       line-height: 1.7;
+      color: #243047;
+      background: #f6f8fc;
     }
-
-    header {
-      background: linear-gradient(135deg, #102c60, #2563eb);
-      color: white;
-      padding: 65px 20px 75px;
-      text-align: center;
-    }
-
-    header .icon {
-      font-size: 52px;
-      margin-bottom: 12px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(30px, 6vw, 44px);
-      letter-spacing: -1px;
-    }
-
-    header p {
-      margin: 12px auto 0;
-      max-width: 550px;
-      color: #dbeafe;
-      font-size: 17px;
-    }
-
-    main {
-      max-width: 850px;
-      margin: -35px auto 50px;
-      padding: 0 18px;
-      position: relative;
-    }
-
+    h1, h2 { color: #1763bb; }
+    h1 { margin-bottom: 4px; }
+    .subtitle { color: #667085; margin-bottom: 30px; }
     .card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 30px;
-      margin-bottom: 22px;
-      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+      background: #fff;
+      padding: 26px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.06);
     }
-
-    h2 {
-      color: var(--navy);
-      margin-top: 0;
-      font-size: 23px;
-    }
-
-    h3 {
-      color: #1e40af;
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    .intro {
-      text-align: center;
-    }
-
-    .intro p {
-      color: var(--muted);
-      margin-bottom: 0;
-    }
-
-    .faq {
-      border-bottom: 1px solid var(--border);
-      padding: 18px 0;
-    }
-
-    .faq:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .faq:first-of-type {
-      padding-top: 4px;
-    }
-
-    .faq h3 {
-      margin-top: 0;
-    }
-
-    .faq p {
-      color: var(--text);
-      margin-bottom: 0;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-      margin-top: 18px;
-    }
-
-    .feature {
-      background: #eff6ff;
-      border: 1px solid #dbeafe;
-      border-radius: 14px;
-      padding: 18px;
-    }
-
-    .feature strong {
-      display: block;
-      color: #1d4ed8;
-      margin-bottom: 5px;
-    }
-
-    .feature span {
-      font-size: 14px;
-      color: #475569;
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-
-    li {
-      margin-bottom: 9px;
-    }
-
-    a {
-      color: var(--blue);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .contact {
-      text-align: center;
-      background: linear-gradient(135deg, #eff6ff, #ffffff);
-    }
-
-    .email-button {
-      display: inline-block;
-      background: var(--blue);
-      color: white;
-      padding: 13px 25px;
-      border-radius: 12px;
-      margin: 12px 0;
-      font-weight: 700;
-    }
-
-    .email-button:hover {
-      background: #1d4ed8;
-      color: white;
-      text-decoration: none;
-    }
-
+    a { color: #1763bb; }
     footer {
       text-align: center;
-      padding: 10px 20px 35px;
-      color: var(--muted);
+      margin-top: 28px;
       font-size: 13px;
+      color: #667085;
     }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 45px 18px 65px;
-      }
-
-      .card {
-        padding: 22px;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
+    @media (prefers-color-scheme: dark) {
+      body { background: #101827; color: #e4eaf4; }
+      .card { background: #1b2738; }
+      h1, h2, a { color: #79b5ff; }
+      .subtitle, footer { color: #abb8c9; }
     }
   </style>
 </head>
-
 <body>
+  <div class="card">
+    <h1>Parking Spot Hero</h1>
+    <p class="subtitle">Support & Frequently Asked Questions</p>
 
-<header>
-  <div class="icon">🚗</div>
-  <h1>Parking Spot Hero</h1>
-  <p>Never forget where you parked.</p>
-  <p>Support Center &amp; Frequently Asked Questions</p>
-</header>
+    <p>Need help with Parking Spot Hero?
+    Find answers to common questions below or
+    contact us directly.</p>
 
-<main>
+    <h2>How do I save my parking location?</h2>
+    <p>Open the app and select Quick Park to save
+    your current location with one tap.</p>
 
-  <section class="card intro">
-    <h2>Welcome to Parking Spot Hero Support</h2>
-    <p>
-      Need help saving your parking spot, finding your car,
-      or managing reminders? You're in the right place.
-    </p>
-  </section>
+    <p>For additional information such as photos,
+    notes, parking levels, and expiration reminders,
+    choose Save Parking With Details.</p>
 
-  <section class="card">
-    <h2>What Can Parking Spot Hero Do?</h2>
+    <h2>Is Quick Park free?</h2>
+    <p>Yes. Quick Park is free and unlimited.
+    It does not use any of your three free
+    detailed parking sessions.</p>
 
-    <div class="feature-grid">
-      <div class="feature">
-        <strong>📍 Quick Park</strong>
-        <span>Save your current GPS parking location quickly.</span>
-      </div>
+    <h2>How many detailed sessions are free?</h2>
+    <p>You can save three detailed parking sessions
+    for free. Afterward, Pro is required for
+    additional detailed saves.</p>
 
-      <div class="feature">
-        <strong>🗺️ Find My Car</strong>
-        <span>Navigate back to your saved vehicle location.</span>
-      </div>
-
-      <div class="feature">
-        <strong>⏰ Parking Reminders</strong>
-        <span>Set timers to help avoid overstaying.</span>
-      </div>
-
-      <div class="feature">
-        <strong>📷 Parking Photos</strong>
-        <span>Remember landmarks, garage levels, and signs.</span>
-      </div>
-
-      <div class="feature">
-        <strong>🚘 Automatic Detection</strong>
-        <span>Optionally receive suggestions when you may have parked.</span>
-      </div>
-
-      <div class="feature">
-        <strong>📋 Parking History</strong>
-        <span>Review your previously saved parking sessions.</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq">
-      <h3>How do I save my parking location?</h3>
-      <p>
-        Open Parking Spot Hero and tap <strong>Quick Park</strong>
-        to save your current GPS position. For additional
-        information, choose <strong>Save With Details</strong>.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>Can I save a spot without GPS?</h3>
-      <p>
-        Yes. Use the manual address option when your GPS
-        signal is unavailable or inaccurate. You can also
-        adjust the map pin to better represent your location.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>How do I find my parked car?</h3>
-      <p>
-        Tap <strong>Find My Car</strong> to view your saved
-        parking location and your position on the map.
-        You can also select <strong>Open in Maps (Backup)</strong>
-        to navigate using Apple Maps.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>How do parking reminders work?</h3>
-      <p>
-        Set a parking timer while saving or editing a parking
-        session. The app schedules a notification based on
-        your selected time. Make sure notifications are
-        enabled in your iPhone settings.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>Can Parking Spot Hero detect parking automatically?</h3>
-      <p>
-        Yes. Optional automatic parking detection uses
-        available location and motion information to suggest
-        when you may have parked. This feature depends on
-        device permissions, background settings, and signal
-        quality. You can always save a spot manually.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>Why is my GPS location inaccurate?</h3>
-      <p>
-        Parking garages, underground locations, tall buildings,
-        and indoor environments can interfere with GPS accuracy.
-        Adjust the saved pin or enter the location manually
-        when needed.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>Can I attach a photo to a parking spot?</h3>
-      <p>
-        Yes. Save a photo of your parking area, garage sign,
-        floor number, or nearby landmark to help you
-        recognize the location later.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>What happens when I tap End Parking?</h3>
-      <p>
-        Your active parking session ends, the record is moved
-        to parking history, and pending parking reminders
-        for that session are canceled.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>Does the app work without an internet connection?</h3>
-      <p>
-        Previously saved parking coordinates remain available
-        on your device. Some features, including map imagery,
-        address lookup, and navigation, may require internet
-        access.
-      </p>
-    </div>
-
-    <div class="faq">
-      <h3>Does Parking Spot Hero require an account?</h3>
-      <p>
-        No. You can use the app's core parking features
-        without creating an account.
-      </p>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Troubleshooting</h2>
-
-    <h3>Location Not Working?</h3>
+    <h2>What does Pro unlock?</h2>
     <ul>
-      <li>Open your iPhone's Settings app.</li>
-      <li>Go to Privacy &amp; Security → Location Services.</li>
-      <li>Select Parking Spot Hero.</li>
-      <li>Allow location access and enable Precise Location.</li>
-      <li>Try saving your parking location again.</li>
+      <li>Unlimited detailed parking sessions</li>
+      <li>Automatic parking detection</li>
+      <li>Full access to Pro parking features</li>
     </ul>
+    <p>Pro is a one-time purchase, not a subscription.</p>
 
-    <h3>Not Receiving Parking Reminders?</h3>
-    <ul>
-      <li>Open Settings → Notifications.</li>
-      <li>Select Parking Spot Hero.</li>
-      <li>Enable Allow Notifications.</li>
-      <li>Check that your parking timer has not expired.</li>
-      <li>Review Focus settings that may silence alerts.</li>
-    </ul>
+    <h2>How does automatic parking detection work?</h2>
+    <p>When enabled by a Pro user, the app uses
+    supported location and motion signals to
+    identify a possible parking event and
+    suggest saving the vehicle's location.</p>
 
-    <h3>Automatic Parking Detection Not Working?</h3>
-    <ul>
-      <li>Make sure automatic detection is enabled in the app.</li>
-      <li>Check location and motion permissions.</li>
-      <li>Allow background location access when requested.</li>
-      <li>Remember that detection is not guaranteed for every trip.</li>
-    </ul>
+    <p>Detection depends on device permissions
+    and conditions. It may not recognize every stop.</p>
 
-    <h3>App Not Behaving as Expected?</h3>
-    <ul>
-      <li>Close and reopen Parking Spot Hero.</li>
-      <li>Make sure your iPhone is running a supported iOS version.</li>
-      <li>Check your device's location and notification settings.</li>
-      <li>Contact support if the issue continues.</li>
-    </ul>
-  </section>
+    <h2>How do parking reminders work?</h2>
+    <p>When you set an expiration time for a detailed
+    parking session and allow notifications,
+    the app can remind you approximately 15 minutes
+    before the parking period ends.</p>
 
-  <section class="card">
-    <h2>Privacy &amp; Your Data</h2>
-    <p>
-      Parking Spot Hero uses location information to save
-      and locate your parked vehicle. Parking records and
-      associated photos are stored locally on your device.
-    </p>
-    <p>
-      The app does not require an account for its core features.
-      Location information may be passed to Apple Maps when
-      you choose external navigation.
-    </p>
-    <p>
-      For complete information, please review the Privacy
-      Policy available through the app.
-    </p>
-  </section>
+    <p>For parking periods shorter than 15 minutes,
+    reminder timing may be adjusted.
+    Notification delivery is not guaranteed.</p>
 
-  <section class="card contact">
-    <h2>Still Need Help?</h2>
-    <p>
-      Found a bug, have a question, or want to suggest
-      a new feature? We'd love to hear from you.
-    </p>
+    <h2>Why is my location inaccurate?</h2>
+    <p>Check that Location Services are enabled
+    for Parking Spot Hero. Enabling Precise Location
+    can improve accuracy.</p>
 
-    <a class="email-button"
-       href="mailto:josh.swift.dev@gmail.com?subject=Parking%20Spot%20Hero%20Support">
-      ✉️ Contact Support
-    </a>
+    <p>GPS accuracy may be reduced inside garages,
+    underground parking areas, or near tall buildings.</p>
 
-    <p>
-      <a href="mailto:josh.swift.dev@gmail.com">
-        josh.swift.dev@gmail.com
-      </a>
-    </p>
+    <h2>Can I change the saved parking pin?</h2>
+    <p>Yes. Use the available map adjustment controls
+    to refine your saved parking location.</p>
 
-    <p style="font-size:13px;color:#64748b;">
-      Please include your iPhone model, iOS version,
-      and a description of the problem.
-    </p>
-  </section>
+    <h2>How do I find my car?</h2>
+    <p>Open your saved parking location and use
+    the map or navigation options to guide you
+    back to your vehicle.</p>
 
-</main>
+    <h2>How do I restore Pro?</h2>
+    <p>Open Settings and choose Restore Purchases
+    if you previously purchased Pro and the
+    restore option is available.</p>
 
-<footer>
-  <p>© 2026 Parking Spot Hero. All rights reserved.</p>
-  <p>Made for iPhone.</p>
-</footer>
+    <p>Use the same Apple Account associated with
+    the original purchase.</p>
 
+    <h2>I purchased an older paid version.
+    Do I have to pay again?</h2>
+    <p>Eligible original paid-version owners can
+    retain Pro access without purchasing it again.
+    Make sure you are signed in to the Apple Account
+    associated with your original purchase.</p>
+
+    <h2>Can I transfer my parking history?</h2>
+    <p>Parking records are stored locally.
+    Availability after reinstalling or moving devices
+    depends on iOS backup and restoration behavior.</p>
+
+    <h2>How do I request a refund?</h2>
+    <p>Apple handles App Store purchase refunds.
+    Visit <a href="https://reportaproblem.apple.com/">
+    reportaproblem.apple.com</a>.</p>
+
+    <h2>Contact Support</h2>
+    <p>If you experience a bug or need assistance,
+    email us with your device model, iOS version,
+    app version, and a description of the issue.</p>
+
+    <p><strong>Email:</strong>
+    <a href="mailto:josh.swift.dev@gmail.com?subject=Parking%20Spot%20Hero%20Support">
+    josh.swift.dev@gmail.com</a></p>
+  </div>
+
+  <footer>
+    © 2026 Parking Spot Hero. All rights reserved.<br>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Use</a>
+  </footer>
 </body>
 </html>
